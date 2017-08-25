@@ -1,0 +1,773 @@
+Start testing: Aug 25 18:32 CEST
+----------------------------------------------------------
+1/32 Testing: test_err
+1/32 Test: test_err
+Command: "/home/user/contiki/relic-new/bin/test_err"
+Directory: /home/user/contiki/relic-new/test
+"test_err" start time: Aug 25 18:32 CEST
+Output:
+----------------------------------------------------------
+
+-- Tests for the ERR module:
+
+Testing if not using try-catch is correct...                                  
+ERROR in dummy2() at /home/user/contiki/relic-relic-toolkit-0.4.0/test/test_err.c,54: not enough memory.
+	Call stack:
+		#0 /home/user/contiki/relic-new/bin/test_err() [0x8050096]
+		#1 /home/user/contiki/relic-new/bin/test_err(main+0x96) [0x804fd26]
+[[1;32mPASS[0m]
+Testing if try-catch is correct and error message is printed...               
+ERROR in dummy2() at /home/user/contiki/relic-relic-toolkit-0.4.0/test/test_err.c,54: not enough memory.
+	Call stack:
+		#0 /home/user/contiki/relic-new/bin/test_err() [0x805003d]
+		#1 /home/user/contiki/relic-new/bin/test_err(main+0x1fe) [0x804fe8e]
+[[1;32mPASS[0m]
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"test_err" end time: Aug 25 18:32 CEST
+"test_err" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/32 Testing: test_bn
+2/32 Test: test_bn
+Command: "/home/user/contiki/relic-new/bin/test_bn"
+Directory: /home/user/contiki/relic-new/test
+"test_bn" start time: Aug 25 18:32 CEST
+Output:
+----------------------------------------------------------
+
+-- Tests for the BN module
+
+** Utilities:
+
+Testing if memory can be allocated...                                         [[1;32mPASS[0m]
+Testing if comparison is consistent...                                        [[1;32mPASS[0m]
+Testing if copy and comparison are consistent...                              [[1;32mPASS[0m]
+Testing if absolute, negation and comparison are consistent...                [[1;32mPASS[0m]
+Testing if signal test is correct...                                          [[1;32mPASS[0m]
+Testing if assignment to zero and comparison are consistent...                [[1;32mPASS[0m]
+Testing if assignment to zero and zero test are consistent...                 [[1;32mPASS[0m]
+Testing if oddness test is correct...                                         [[1;32mPASS[0m]
+Testing if assignment and bit counting are consistent...                      [[1;32mPASS[0m]
+Testing if bit setting and getting are consistent...                          [[1;32mPASS[0m]
+Testing if hamming weight is correct...                                       [[1;32mPASS[0m]
+Testing if reading and writing the first digit are consistent...              [[1;32mPASS[0m]
+Testing if assignment to a constant and comparison are consistent...          [[1;32mPASS[0m]
+Testing if assignment to random and comparison are consistent...              [[1;32mPASS[0m]
+Testing if different forms of assignment are consistent...                    [[1;32mPASS[0m]
+Testing if reading and writing a positive number are consistent...            [[1;32mPASS[0m]
+Testing if getting the size of a positive number is correct...                [[1;32mPASS[0m]
+Testing if reading and writing a negative number are consistent...            [[1;32mPASS[0m]
+Testing if getting the size of a negative number is correct...                [[1;32mPASS[0m]
+
+** Arithmetic:
+
+Testing if addition is commutative...                                         [[1;32mPASS[0m]
+Testing if addition is associative...                                         [[1;32mPASS[0m]
+Testing if addition has identity...                                           [[1;32mPASS[0m]
+Testing if addition has inverse...                                            [[1;32mPASS[0m]
+Testing if subtraction is anti-commutative...                                 [[1;32mPASS[0m]
+Testing if subtraction has identity...                                        [[1;32mPASS[0m]
+Testing if subtraction has inverse...                                         [[1;32mPASS[0m]
+Testing if multiplication is commutative...                                   [[1;32mPASS[0m]
+Testing if multiplication is associative...                                   [[1;32mPASS[0m]
+Testing if multiplication is distributive...                                  [[1;32mPASS[0m]
+Testing if multiplication has identity...                                     [[1;32mPASS[0m]
+Testing if multiplication has zero property...                                [[1;32mPASS[0m]
+Testing if multiplication has negation property...                            [[1;32mPASS[0m]
+Testing if multiplication by a positive number preserves order...             [[1;32mPASS[0m]
+Testing if multiplication by a negative number reverses order...              [[1;32mPASS[0m]
+Testing if basic multiplication is correct...                                 [[1;32mPASS[0m]
+Testing if comba multiplication is correct...                                 [[1;32mPASS[0m]
+Testing if karatsuba multiplication is correct...                             [[1;32mPASS[0m]
+Testing if squaring is correct...                                             [[1;32mPASS[0m]
+Testing if basic squaring is correct...                                       [[1;32mPASS[0m]
+Testing if comba squaring is correct...                                       [[1;32mPASS[0m]
+Testing if karatsuba squaring is correct...                                   [[1;32mPASS[0m]
+Testing if doubling is consistent...                                          [[1;32mPASS[0m]
+Testing if halving is consistent...                                           [[1;32mPASS[0m]
+Testing if shifting by 1 bit is consistent...                                 [[1;32mPASS[0m]
+Testing if shifting by 2 bits is consistent...                                [[1;32mPASS[0m]
+Testing if shifting by half digit is consistent...                            [[1;32mPASS[0m]
+Testing if shifting by 1 digit is consistent...                               [[1;32mPASS[0m]
+Testing if shifting by 2 digits is consistent...                              [[1;32mPASS[0m]
+Testing if shifting by 1 digit and half is consistent...                      [[1;32mPASS[0m]
+Testing if trivial division is correct...                                     [[1;32mPASS[0m]
+Testing if trivial negative division is correct...                            [[1;32mPASS[0m]
+Testing if trivial division by negative is correct...                         [[1;32mPASS[0m]
+Testing if division is correct...                                             [[1;32mPASS[0m]
+Testing if negative division is correct...                                    [[1;32mPASS[0m]
+Testing if division by negative is correct...                                 [[1;32mPASS[0m]
+Testing if barrett reduction is correct...                                    [[1;32mPASS[0m]
+Testing if basic montgomery reduction is correct...                           [[1;32mPASS[0m]
+Testing if comba montgomery reduction is correct...                           [[1;32mPASS[0m]
+Testing if pseudo-mersenne reduction is correct...                            [[1;32mPASS[0m]
+Testing if greatest common divisor is correct...                              [[1;32mPASS[0m]
+Testing if extended greatest common divisor is correct...                     [[1;32mPASS[0m]
+Testing if basic greatest common divisor is correct...                        [[1;32mPASS[0m]
+Testing if basic extended greatest common divisor is correct...               [[1;32mPASS[0m]
+Testing if lehmer greatest common divisor is correct...                       [[1;32mPASS[0m]
+Testing if lehmer extended greatest common divisor is correct...              [[1;32mPASS[0m]
+Testing if stein greatest common divisor is correct...                        [[1;32mPASS[0m]
+Testing if stein extended greatest common divisor is correct...               [[1;32mPASS[0m]
+Testing if midway extended greatest common divisor is correct...              [[1;32mPASS[0m]
+Testing if least common multiple is correct...                                [[1;32mPASS[0m]
+Testing if legendre symbol is correct...                                      [[1;32mPASS[0m]
+Testing if legendre symbol is a homomorphism...                               [[1;32mPASS[0m]
+Testing if legendre symbol respects quadratic reciprocity...                  [[1;32mPASS[0m]
+Testing if jacobi symbol is correct...                                        [[1;32mPASS[0m]
+Testing if jacobi symbol is a homomorphism...                                 [[1;32mPASS[0m]
+Testing if jacobi symbol is consistent with gcd...                            [[1;32mPASS[0m]
+Testing if jacobi symbol respects quadratic reciprocity...                    [[1;32mPASS[0m]
+Testing if addition of a single digit is consistent...                        [[1;32mPASS[0m]
+Testing if subtraction of a single digit is consistent...                     [[1;32mPASS[0m]
+Testing if multiplication by a single digit is consistent...                  [[1;32mPASS[0m]
+Testing if division by a single digit is consistent...                        [[1;32mPASS[0m]
+Testing if modular reduction modulo a digit is consistent...                  [[1;32mPASS[0m]
+Testing if greatest common divisor with a digit is consistent...              [[1;32mPASS[0m]
+Testing if extended greatest common divisor with a digit is consistent...     [[1;32mPASS[0m]
+Testing if modular exponentiation with a digit is consistent...               [[1;32mPASS[0m]
+Testing if window recoding is correct...                                      [[1;32mPASS[0m]
+Testing if sliding window recoding is correct...                              [[1;32mPASS[0m]
+Testing if naf recoding is correct...                                         [[1;32mPASS[0m]
+Testing if tnaf recoding is correct...                                        [[1;32mPASS[0m]
+Testing if regular tnaf recoding is correct...                                [[1;32mPASS[0m]
+Testing if regular recoding is correct...                                     [[1;32mPASS[0m]
+Testing if jsf recoding is correct...                                         [[1;32mPASS[0m]
+Testing if glv recoding is correct...                                         [[1;32mPASS[0m]
+Testing if modular exponentiation is correct...                               [[1;32mPASS[0m]
+Testing if modular exponentiation with zero power is correct...               
+ERROR in bn_rec_slw() at /home/user/contiki/relic-relic-toolkit-0.4.0/src/bn/relic_bn_rec.c,117: insufficient buffer capacity.
+	Call stack:
+		#0 /home/user/contiki/relic-new/bin/test_bn(bn_rec_slw+0xff) [0x806260f]
+		#1 /home/user/contiki/relic-new/bin/test_bn(bn_mxp_slide+0x4ff) [0x8060b9f]
+		#2 /home/user/contiki/relic-new/bin/test_bn() [0x805117e]
+		#3 /home/user/contiki/relic-new/bin/test_bn(main+0xf0) [0x8051ab0]
+	CAUGHT in bn_mxp_slide() at /home/user/contiki/relic-relic-toolkit-0.4.0/src/bn/relic_bn_mxp.c,187.
+<end of output>
+Test time =  14.31 sec
+----------------------------------------------------------
+Test Failed.
+"test_bn" end time: Aug 25 18:32 CEST
+"test_bn" time elapsed: 00:00:14
+----------------------------------------------------------
+
+3/32 Testing: test_dv
+3/32 Test: test_dv
+Command: "/home/user/contiki/relic-new/bin/test_dv"
+Directory: /home/user/contiki/relic-new/test
+"test_dv" start time: Aug 25 18:32 CEST
+Output:
+----------------------------------------------------------
+
+-- Tests for the DV module:
+
+Testing if temporary memory can be allocated...                               [[1;32mPASS[0m]
+Testing if copy and comparison are consistent...                              [[1;32mPASS[0m]
+Testing if conditional copy and comparison are consistent...                  [[1;32mPASS[0m]
+Testing if conditional swap and copy are consistent...                        [[1;32mPASS[0m]
+Testing if conditional swap and comparison are consistent...                  [[1;32mPASS[0m]
+
+-- All tests have passed.
+
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"test_dv" end time: Aug 25 18:32 CEST
+"test_dv" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/32 Testing: test_fp
+4/32 Test: test_fp
+Command: "/home/user/contiki/relic-new/bin/test_fp"
+Directory: /home/user/contiki/relic-new/test
+"test_fp" start time: Aug 25 18:32 CEST
+Output:
+----------------------------------------------------------
+
+-- Tests for the FP module
+
+-- Prime modulus:
+   B6400000 0000FF2F 22000000 85FD5480 B0001F44 B6B88BF1 42BC818F 95E3E6AF
+
+** Utilities
+
+Testing if memory can be allocated...                                         [[1;32mPASS[0m]
+Testing if comparison is consistent...                                        [[1;32mPASS[0m]
+Testing if copy and comparison are consistent...                              [[1;32mPASS[0m]
+Testing if negation is consistent...                                          [[1;32mPASS[0m]
+Testing if assignment to zero and comparison are consistent...                [[1;32mPASS[0m]
+Testing if assignment to random and comparison are consistent...              [[1;32mPASS[0m]
+Testing if assignment to zero and zero test are consistent...                 [[1;32mPASS[0m]
+Testing if assignment to a constant and comparison are consistent...          [[1;32mPASS[0m]
+Testing if bit setting and getting are consistent...                          [[1;32mPASS[0m]
+Testing if bit assignment and counting are consistent...                      [[1;32mPASS[0m]
+Testing if reading and writing a prime field element are consistent...        [[1;32mPASS[0m]
+Testing if getting the size of a prime field element is correct...            [[1;32mPASS[0m]
+
+** Arithmetic
+
+Testing if addition is commutative...                                         [[1;32mPASS[0m]
+Testing if addition is associative...                                         [[1;32mPASS[0m]
+Testing if addition has identity...                                           [[1;32mPASS[0m]
+Testing if addition has inverse...                                            [[1;32mPASS[0m]
+Testing if basic addition is correct...                                       [[1;32mPASS[0m]
+Testing if integrated addition is correct...                                  [[1;32mPASS[0m]
+Testing if subtraction is anti-commutative...                                 [[1;32mPASS[0m]
+Testing if subtraction has identity...                                        [[1;32mPASS[0m]
+Testing if subtraction has inverse...                                         [[1;32mPASS[0m]
+Testing if basic subtraction is correct...                                    [[1;32mPASS[0m]
+Testing if integrated subtraction is correct...                               [[1;32mPASS[0m]
+Testing if basic negation is correct...                                       [[1;32mPASS[0m]
+Testing if integrated negation is correct...                                  [[1;32mPASS[0m]
+Testing if multiplication is commutative...                                   [[1;32mPASS[0m]
+Testing if multiplication is associative...                                   [[1;32mPASS[0m]
+Testing if multiplication is distributive...                                  [[1;32mPASS[0m]
+Testing if multiplication has identity...                                     [[1;32mPASS[0m]
+Testing if multiplication has zero property...                                [[1;32mPASS[0m]
+Testing if basic multiplication is correct...                                 [[1;32mPASS[0m]
+Testing if integrated multiplication is correct...                            [[1;32mPASS[0m]
+Testing if comba multiplication is correct...                                 [[1;32mPASS[0m]
+Testing if karatsuba multiplication is correct...                             [[1;32mPASS[0m]
+Testing if squaring is correct...                                             [[1;32mPASS[0m]
+Testing if basic squaring is correct...                                       [[1;32mPASS[0m]
+Testing if integrated squaring is correct...                                  [[1;32mPASS[0m]
+Testing if comba squaring is correct...                                       [[1;32mPASS[0m]
+Testing if karatsuba squaring is correct...                                   [[1;32mPASS[0m]
+Testing if doubling is consistent...                                          [[1;32mPASS[0m]
+Testing if basic doubling is correct...                                       [[1;32mPASS[0m]
+Testing if integrated doubling is correct...                                  [[1;32mPASS[0m]
+Testing if halving is consistent...                                           [[1;32mPASS[0m]
+Testing if basic halving is correct...                                        [[1;32mPASS[0m]
+Testing if integrated halving is correct...                                   [[1;32mPASS[0m]
+Testing if shifting by 1 bit is consistent...                                 [[1;32mPASS[0m]
+Testing if shifting by 2 bits is consistent...                                [[1;32mPASS[0m]
+Testing if shifting by half digit is consistent...                            [[1;32mPASS[0m]
+Testing if shifting by 1 digit is consistent...                               [[1;32mPASS[0m]
+Testing if shifting by 2 digits is consistent...                              [[1;32mPASS[0m]
+Testing if shifting by 1 digit and half is consistent...                      [[1;32mPASS[0m]
+Testing if modular reduction is correct...                                    [[1;32mPASS[0m]
+Testing if basic modular reduction is correct...                              [[1;32mPASS[0m]
+Testing if montgomery modular reduction is correct...                         [[1;32mPASS[0m]
+Testing if inversion is correct...                                            [[1;32mPASS[0m]
+Testing if basic inversion is correct...                                      [[1;32mPASS[0m]
+Testing if binary inversion is correct...                                     [[1;32mPASS[0m]
+Testing if montgomery inversion is correct...                                 [[1;32mPASS[0m]
+Testing if euclidean inversion is correct...                                  [[1;32mPASS[0m]
+Testing if lower inversion is correct...                                      [[1;32mPASS[0m]
+Testing if simultaneous inversion is correct...                               [[1;32mPASS[0m]
+Testing if exponentiation is correct...                                       [[1;32mPASS[0m]
+Testing if basic exponentiation is correct...                                 [[1;32mPASS[0m]
+Testing if sliding window exponentiation is correct...                        [[1;32mPASS[0m]
+Testing if constant-time exponentiation is correct...                         [[1;32mPASS[0m]
+Testing if square root extraction is correct...                               [[1;32mPASS[0m]
+Testing if addition of a single digit is consistent...                        [[1;32mPASS[0m]
+Testing if subtraction of a single digit is consistent...                     [[1;32mPASS[0m]
+Testing if multiplication by a single digit is consistent...                  [[1;32mPASS[0m]
+
+-- All tests have passed.
+
+<end of output>
+Test time =   0.50 sec
+----------------------------------------------------------
+Test Passed.
+"test_fp" end time: Aug 25 18:32 CEST
+"test_fp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/32 Testing: test_fpx
+5/32 Test: test_fpx
+Command: "/home/user/contiki/relic-new/bin/test_fpx"
+Directory: /home/user/contiki/relic-new/test
+"test_fpx" start time: Aug 25 18:32 CEST
+Output:
+----------------------------------------------------------
+
+-- Tests for the FPX module
+
+-- Quadratic extension:
+
+** Utilities:
+
+Testing if memory can be allocated...                                         [[1;32mPASS[0m]
+Testing if comparison is consistent...                                        [[1;32mPASS[0m]
+Testing if copy and comparison are consistent...                              [[1;32mPASS[0m]
+Testing if negation is consistent...                                          [[1;32mPASS[0m]
+Testing if assignment to zero and comparison are consistent...                [[1;32mPASS[0m]
+Testing if assignment to random and comparison are consistent...              [[1;32mPASS[0m]
+Testing if assignment to zero and zero test are consistent...                 [[1;32mPASS[0m]
+Testing if reading and writing a finite field element are consistent...       [[1;32mPASS[0m]
+Testing if getting the size of a prime field element is correct...            [[1;32mPASS[0m]
+
+** Arithmetic:
+
+Testing if addition is commutative...                                         [[1;32mPASS[0m]
+Testing if addition is associative...                                         [[1;32mPASS[0m]
+Testing if addition has identity...                                           [[1;32mPASS[0m]
+Testing if addition has inverse...                                            [[1;32mPASS[0m]
+Testing if basic addition is correct...                                       [[1;32mPASS[0m]
+Testing if integrated addition is correct...                                  [[1;32mPASS[0m]
+Testing if subtraction is anti-commutative...                                 [[1;32mPASS[0m]
+Testing if subtraction has identity...                                        [[1;32mPASS[0m]
+Testing if subtraction has inverse...                                         [[1;32mPASS[0m]
+Testing if basic subtraction is correct...                                    [[1;32mPASS[0m]
+Testing if integrated subtraction is correct...                               [[1;32mPASS[0m]
+Testing if doubling is correct...                                             [[1;32mPASS[0m]
+Testing if basic doubling is correct...                                       [[1;32mPASS[0m]
+Testing if integrated doubling is correct...                                  [[1;32mPASS[0m]
+Testing if multiplication is commutative...                                   [[1;32mPASS[0m]
+Testing if multiplication is associative...                                   [[1;32mPASS[0m]
+Testing if multiplication is distributive...                                  [[1;32mPASS[0m]
+Testing if multiplication has identity...                                     [[1;32mPASS[0m]
+Testing if multiplication has zero property...                                [[1;32mPASS[0m]
+Testing if basic multiplication is correct...                                 [[1;32mPASS[0m]
+Testing if integrated multiplication is correct...                            [[1;32mPASS[0m]
+Testing if multiplication by adjoined root is correct...                      [[1;32mPASS[0m]
+Testing if multiplication by quadratic/cubic non-residue is correct...        [[1;32mPASS[0m]
+Testing if basic multiplication by qnr/cnr is correct...                      [[1;32mPASS[0m]
+Testing if integrated multiplication by qnr/cnr is correct...                 [[1;32mPASS[0m]
+Testing if squaring is correct...                                             [[1;32mPASS[0m]
+Testing if basic squaring is correct...                                       [[1;32mPASS[0m]
+Testing if integrated squaring is correct...                                  [[1;32mPASS[0m]
+Testing if inversion is correct...                                            [[1;32mPASS[0m]
+Testing if inversion of a unitary element is correct...                       [[1;32mPASS[0m]
+Testing if simultaneous inversion is correct...                               [[1;32mPASS[0m]
+Testing if frobenius and exponentiation are consistent...                     [[1;32mPASS[0m]
+Testing if frobenius and squared frobenius are consistent...                  [[1;32mPASS[0m]
+Testing if exponentiation of unitary element is correct...                    [[1;32mPASS[0m]
+Testing if square root extraction is correct...                               [[1;32mPASS[0m]
+
+-- Sextic extension:
+
+** Utilities:
+
+Testing if memory can be allocated...                                         [[1;32mPASS[0m]
+Testing if comparison is consistent...                                        [[1;32mPASS[0m]
+Testing if copy and comparison are consistent...                              [[1;32mPASS[0m]
+Testing if negation is consistent...                                          [[1;32mPASS[0m]
+Testing if assignment to zero and comparison are consistent...                [[1;32mPASS[0m]
+Testing if assignment to random and comparison are consistent...              [[1;32mPASS[0m]
+Testing if assignment to zero and zero test are consistent...                 [[1;32mPASS[0m]
+Testing if reading and writing a finite field element are consistent...       [[1;32mPASS[0m]
+Testing if getting the size of a prime field element is correct...            [[1;32mPASS[0m]
+
+** Arithmetic:
+
+Testing if addition is commutative...                                         [[1;32mPASS[0m]
+Testing if addition is associative...                                         [[1;32mPASS[0m]
+Testing if addition has identity...                                           [[1;32mPASS[0m]
+Testing if addition has inverse...                                            [[1;32mPASS[0m]
+Testing if subtraction is anti-commutative...                                 [[1;32mPASS[0m]
+Testing if subtraction has identity...                                        [[1;32mPASS[0m]
+Testing if subtraction has inverse...                                         [[1;32mPASS[0m]
+Testing if doubling is correct...                                             [[1;32mPASS[0m]
+Testing if multiplication is commutative...                                   [[1;32mPASS[0m]
+Testing if multiplication is associative...                                   [[1;32mPASS[0m]
+Testing if multiplication is distributive...                                  [[1;32mPASS[0m]
+Testing if multiplication has identity...                                     [[1;32mPASS[0m]
+Testing if multiplication has zero property...                                [[1;32mPASS[0m]
+Testing if multiplication by adjoined root is correct...                      [[1;32mPASS[0m]
+Testing if basic multiplication is correct...                                 [[1;32mPASS[0m]
+Testing if lazy reduced multiplication is correct...                          [[1;32mPASS[0m]
+Testing if squaring is correct...                                             [[1;32mPASS[0m]
+Testing if basic squaring is correct...                                       [[1;32mPASS[0m]
+Testing if lazy reduced squaring is correct...                                [[1;32mPASS[0m]
+Testing if inversion is correct...                                            [[1;32mPASS[0m]
+Testing if frobenius and exponentiation are consistent...                     [[1;32mPASS[0m]
+Testing if frobenius and squared frobenius are consistent...                  [[1;32mPASS[0m]
+
+-- Dodecic extension:
+
+** Utilities:
+
+Testing if memory can be allocated...                                         [[1;32mPASS[0m]
+Testing if comparison is consistent...                                        [[1;32mPASS[0m]
+Testing if copy and comparison are consistent...                              [[1;32mPASS[0m]
+Testing if negation is consistent...                                          [[1;32mPASS[0m]
+Testing if assignment to zero and comparison are consistent...                [[1;32mPASS[0m]
+Testing if assignment to random and comparison are consistent...              [[1;32mPASS[0m]
+Testing if assignment to zero and zero test are consistent...                 [[1;32mPASS[0m]
+Testing if reading and writing a finite field element are consistent...       [[1;32mPASS[0m]
+Testing if getting the size of a finite field element is correct...           [[1;32mPASS[0m]
+
+** Arithmetic:
+
+Testing if addition is commutative...                                         [[1;32mPASS[0m]
+Testing if addition is associative...                                         [[1;32mPASS[0m]
+Testing if addition has identity...                                           [[1;32mPASS[0m]
+Testing if addition has inverse...                                            [[1;32mPASS[0m]
+Testing if subtraction is anti-commutative...                                 [[1;32mPASS[0m]
+Testing if subtraction has identity...                                        [[1;32mPASS[0m]
+Testing if subtraction has inverse...                                         [[1;32mPASS[0m]
+Testing if multiplication is commutative...                                   [[1;32mPASS[0m]
+Testing if multiplication is associative...                                   [[1;32mPASS[0m]
+Testing if multiplication is distributive...                                  [[1;32mPASS[0m]
+Testing if multiplication has identity...                                     [[1;32mPASS[0m]
+Testing if multiplication has zero property...                                [[1;32mPASS[0m]
+Testing if basic multiplication is correct...                                 [[1;32mPASS[0m]
+Testing if lazy reduced multiplication is correct...                          [[1;32mPASS[0m]
+Testing if sparse multiplication is correct...                                [[1;32mPASS[0m]
+Testing if basic sparse multiplication is correct...                          [[1;32mPASS[0m]
+Testing if lazy reduced sparse multiplication is correct...                   [[1;32mPASS[0m]
+Testing if squaring is correct...                                             [[1;32mPASS[0m]
+Testing if basic squaring is correct...                                       [[1;32mPASS[0m]
+Testing if lazy reduced squaring is correct...                                [[1;32mPASS[0m]
+Testing if cyclotomic test is correct...                                      [[1;32mPASS[0m]
+Testing if compression in cyclotomic subgroup is correct...                   [[1;32mPASS[0m]
+Testing if simultaneous compression in cyclotomic subgroup is correct...      [[1;32mPASS[0m]
+Testing if cyclotomic squaring is correct...                                  [[1;32mPASS[0m]
+Testing if basic cyclotomic squaring is correct...                            [[1;32mPASS[0m]
+Testing if lazy reduced cyclotomic squaring is correct...                     [[1;32mPASS[0m]
+Testing if compressed squaring is correct...                                  [[1;32mPASS[0m]
+Testing if basic compressed squaring is correct...                            [[1;32mPASS[0m]
+Testing if lazy reduced compressed squaring is correct...                     [[1;32mPASS[0m]
+Testing if cyclotomic exponentiation is correct...                            [[1;32mPASS[0m]
+Testing if sparse cyclotomic exponentiation is correct...                     [[1;32mPASS[0m]
+Testing if inversion is correct...                                            [[1;32mPASS[0m]
+Testing if inversion of a unitary element is correct...                       [[1;32mPASS[0m]
+Testing if frobenius and exponentiation are consistent...                     [[1;32mPASS[0m]
+Testing if frobenius and squared frobenius are consistent...                  [[1;32mPASS[0m]
+Testing if frobenius and cubed frobenius are consistent...                    [[1;32mPASS[0m]
+Testing if compression is consistent...                                       [[1;32mPASS[0m]
+
+-- All tests have passed.
+
+<end of output>
+Test time =   5.54 sec
+----------------------------------------------------------
+Test Passed.
+"test_fpx" end time: Aug 25 18:32 CEST
+"test_fpx" time elapsed: 00:00:05
+----------------------------------------------------------
+
+6/32 Testing: test_fb
+6/32 Test: test_fb
+Command: "/home/user/contiki/relic-new/bin/test_fb"
+Directory: /home/user/contiki/relic-new/test
+"test_fb" start time: Aug 25 18:32 CEST
+Output:
+----------------------------------------------------------
+
+-- Tests for the FB module
+
+-- Irreducible pentanomial:
+   z^283 + z^12 + z^7 + z^5 + 1
+
+** Utilities
+
+Testing if memory can be allocated...                                         [[1;32mPASS[0m]
+Testing if comparison is consistent...                                        [[1;32mPASS[0m]
+Testing if copy and comparison are consistent...                              [[1;32mPASS[0m]
+Testing if negation is consistent...                                          [[1;32mPASS[0m]
+Testing if assignment to zero and comparison are consistent...                [[1;32mPASS[0m]
+Testing if assignment to random and comparison are consistent...              [[1;32mPASS[0m]
+Testing if assignment to zero and zero test are consistent...                 [[1;32mPASS[0m]
+Testing if assignment to a constant and comparison are consistent...          [[1;32mPASS[0m]
+Testing if bit setting and getting are consistent...                          [[1;32mPASS[0m]
+Testing if bit assignment and counting are consistent...                      [[1;32mPASS[0m]
+Testing if reading and writing a binary field element are consistent...       [[1;32mPASS[0m]
+Testing if getting the size of a binary field element is correct...           [[1;32mPASS[0m]
+
+** Arithmetic
+
+Testing if addition is commutative...                                         [[1;32mPASS[0m]
+Testing if addition is associative...                                         [[1;32mPASS[0m]
+Testing if addition has identity...                                           [[1;32mPASS[0m]
+Testing if addition has inverse...                                            [[1;32mPASS[0m]
+Testing if addition of the modulo f(z) is correct...                          [[1;32mPASS[0m]
+Testing if subtraction is anti-commutative...                                 [[1;32mPASS[0m]
+Testing if subtraction has identity...                                        [[1;32mPASS[0m]
+Testing if subtraction has inverse...                                         [[1;32mPASS[0m]
+Testing if subtraction of the modulo f(z) is correct...                       [[1;32mPASS[0m]
+Testing if subtraction is the same as addition...                             [[1;32mPASS[0m]
+Testing if multiplication is commutative...                                   [[1;32mPASS[0m]
+Testing if multiplication is associative...                                   [[1;32mPASS[0m]
+Testing if multiplication is distributive...                                  [[1;32mPASS[0m]
+Testing if multiplication has identity...                                     [[1;32mPASS[0m]
+Testing if multiplication has zero property...                                [[1;32mPASS[0m]
+Testing if basic multiplication is correct...                                 [[1;32mPASS[0m]
+Testing if lopez-dahab multiplication is correct...                           [[1;32mPASS[0m]
+Testing if integrated multiplication is correct...                            [[1;32mPASS[0m]
+Testing if left-to-right comb multiplication is correct...                    [[1;32mPASS[0m]
+Testing if right-to-left comb multiplication is correct...                    [[1;32mPASS[0m]
+Testing if karatsuba multiplication is correct...                             [[1;32mPASS[0m]
+Testing if squaring is correct...                                             [[1;32mPASS[0m]
+Testing if basic squaring is correct...                                       [[1;32mPASS[0m]
+Testing if table squaring is correct...                                       [[1;32mPASS[0m]
+Testing if integrated squaring is correct...                                  [[1;32mPASS[0m]
+Testing if square root extraction is correct...                               [[1;32mPASS[0m]
+Testing if basic square root extraction is correct...                         [[1;32mPASS[0m]
+Testing if fast square root extraction is correct...                          [[1;32mPASS[0m]
+Testing if shifting by 1 bit is consistent...                                 [[1;32mPASS[0m]
+Testing if shifting by 2 bits is consistent...                                [[1;32mPASS[0m]
+Testing if shifting by half digit is consistent...                            [[1;32mPASS[0m]
+Testing if shifting by 1 digit is consistent...                               [[1;32mPASS[0m]
+Testing if shifting by 2 digits is consistent...                              [[1;32mPASS[0m]
+Testing if shifting by 1 digit and half is consistent...                      [[1;32mPASS[0m]
+Testing if modular reduction is correct...                                    [[1;32mPASS[0m]
+Testing if basic modular reduction is correct...                              [[1;32mPASS[0m]
+Testing if fast modular reduction is correct...                               [[1;32mPASS[0m]
+Testing if trace is linear...                                                 [[1;32mPASS[0m]
+Testing if basic trace is correct...                                          [[1;32mPASS[0m]
+Testing if fast trace is correct...                                           [[1;32mPASS[0m]
+Testing if solving a quadratic equation is correct...                         [[1;32mPASS[0m]
+Testing if basic solve is correct...                                          [[1;32mPASS[0m]
+Testing if fast solve is correct...                                           [[1;32mPASS[0m]
+Testing if inversion is correct...                                            [[1;32mPASS[0m]
+Testing if basic inversion is correct...                                      [[1;32mPASS[0m]
+Testing if binary inversion is correct...                                     [[1;32mPASS[0m]
+Testing if almost inverse is correct...                                       [[1;32mPASS[0m]
+Testing if euclidean inversion is correct...                                  [[1;32mPASS[0m]
+Testing if brunner inversion is correct...                                    [[1;32mPASS[0m]
+Testing if itoh-tsuji inversion is correct...                                 [[1;32mPASS[0m]
+Testing if lower inversion is correct...                                      [[1;32mPASS[0m]
+Testing if simultaneous inversion is correct...                               [[1;32mPASS[0m]
+Testing if exponentiation is correct...                                       [[1;32mPASS[0m]
+Testing if basic exponentiation is correct...                                 [[1;32mPASS[0m]
+Testing if sliding window exponentiation is correct...                        [[1;32mPASS[0m]
+Testing if constant-time exponentiation is correct...                         [[1;32mPASS[0m]
+Testing if iterated squaring is correct...                                    [[1;32mPASS[0m]
+Testing if iterated square-root is correct...                                 [[1;32mPASS[0m]
+Testing if basic iterated squaring is correct...                              [[1;32mPASS[0m]
+Testing if basic iterated square-root is correct...                           [[1;32mPASS[0m]
+Testing if fast iterated squaring is correct...                               [[1;32mPASS[0m]
+Testing if fast iterated square-root is correct...                            [[1;32mPASS[0m]
+Testing if addition of a single digit is consistent...                        [[1;32mPASS[0m]
+Testing if subtraction of a single digit is consistent...                     [[1;32mPASS[0m]
+Testing if multiplication by a single digit is consistent...                  [[1;32mPASS[0m]
+
+-- All tests have passed.
+
+<end of output>
+Test time =   2.68 sec
+----------------------------------------------------------
+Test Passed.
+"test_fb" end time: Aug 25 18:32 CEST
+"test_fb" time elapsed: 00:00:02
+----------------------------------------------------------
+
+7/32 Testing: test_fbx
+7/32 Test: test_fbx
+Command: "/home/user/contiki/relic-new/bin/test_fbx"
+Directory: /home/user/contiki/relic-new/test
+"test_fbx" start time: Aug 25 18:32 CEST
+Output:
+----------------------------------------------------------
+
+-- Tests for the FBX module
+
+-- Quadratic extension:
+
+** Utilities:
+
+Testing if memory can be allocated...                                         [[1;32mPASS[0m]
+Testing if comparison is consistent...                                        [[1;32mPASS[0m]
+Testing if copy and comparison are consistent...                              [[1;32mPASS[0m]
+Testing if negation is consistent...                                          [[1;32mPASS[0m]
+Testing if assignment to zero and comparison are consistent...                [[1;32mPASS[0m]
+Testing if assignment to random and comparison are consistent...              [[1;32mPASS[0m]
+Testing if assignment to zero and zero test are consistent...                 [[1;32mPASS[0m]
+
+** Arithmetic:
+
+Testing if addition is commutative...                                         [[1;32mPASS[0m]
+Testing if addition is associative...                                         [[1;32mPASS[0m]
+Testing if addition has identity...                                           [[1;32mPASS[0m]
+Testing if addition has inverse...                                            [[1;32mPASS[0m]
+Testing if subtraction is anti-commutative...                                 [[1;32mPASS[0m]
+Testing if subtraction has identity...                                        [[1;32mPASS[0m]
+Testing if subtraction has inverse...                                         [[1;32mPASS[0m]
+Testing if multiplication is commutative...                                   [[1;32mPASS[0m]
+Testing if multiplication is associative...                                   [[1;32mPASS[0m]
+Testing if multiplication is distributive...                                  [[1;32mPASS[0m]
+Testing if multiplication has identity...                                     [[1;32mPASS[0m]
+Testing if multiplication has zero property...                                [[1;32mPASS[0m]
+Testing if squaring is correct...                                             [[1;32mPASS[0m]
+Testing if solving a quadratic equation is correct...                         [[1;32mPASS[0m]
+Testing if inversion is correct...                                            [[1;32mPASS[0m]
+
+-- Quartic extension:
+
+** Utilities
+
+Testing if memory can be allocated...                                         [[1;32mPASS[0m]
+Testing if comparison is consistent...                                        [[1;32mPASS[0m]
+Testing if copy and comparison are consistent...                              [[1;32mPASS[0m]
+Testing if negation is consistent...                                          [[1;32mPASS[0m]
+Testing if assignment to zero and comparison are consistent...                [[1;32mPASS[0m]
+Testing if assignment to random and comparison are consistent...              [[1;32mPASS[0m]
+Testing if assignment to zero and zero test are consistent...                 [[1;32mPASS[0m]
+
+** Arithmetic:
+
+Testing if addition is commutative...                                         [[1;32mPASS[0m]
+Testing if addition is associative...                                         [[1;32mPASS[0m]
+Testing if addition has identity...                                           [[1;32mPASS[0m]
+Testing if addition has inverse...                                            [[1;32mPASS[0m]
+Testing if subtraction is anti-commutative...                                 [[1;32mPASS[0m]
+Testing if subtraction has identity...                                        [[1;32mPASS[0m]
+Testing if subtraction has inverse...                                         [[1;32mPASS[0m]
+Testing if multiplication is commutative...                                   [[1;32mPASS[0m]
+Testing if multiplication is associative...                                   [[1;32mPASS[0m]
+Testing if multiplication is distributive...                                  [[1;32mPASS[0m]
+Testing if dense x dense multiplication is correct...                         [[1;32mPASS[0m]
+Testing if dense x sparse multiplication is correct...                        [[1;32mPASS[0m]
+Testing if sparse x sparse multiplication is correct...                       [[1;32mPASS[0m]
+Testing if multiplication has identity...                                     [[1;32mPASS[0m]
+Testing if multiplication has zero property...                                [[1;32mPASS[0m]
+Testing if squaring is correct...                                             [[1;32mPASS[0m]
+Testing if inversion is correct...                                            [[1;32mPASS[0m]
+Testing if frobenius and exponentiation are consistent...                     [[1;32mPASS[0m]
+
+-- All tests have passed.
+
+<end of output>
+Test time =   0.54 sec
+----------------------------------------------------------
+Test Passed.
+"test_fbx" end time: Aug 25 18:32 CEST
+"test_fbx" time elapsed: 00:00:00
+----------------------------------------------------------
+
+8/32 Testing: test_ep
+8/32 Test: test_ep
+Command: "/home/user/contiki/relic-new/bin/test_ep"
+Directory: /home/user/contiki/relic-new/test
+"test_ep" start time: Aug 25 18:32 CEST
+Output:
+----------------------------------------------------------
+
+-- Tests for the EP module:
+
+-- Curve BN-P256:
+
+** Utilities:
+
+Testing if memory can be allocated...                                         [[1;32mPASS[0m]
+Testing if copy and comparison are consistent...                              [[1;32mPASS[0m]
+Testing if negation and comparison are consistent...                          [[1;32mPASS[0m]
+Testing if assignment to random and comparison are consistent...              [[1;32mPASS[0m]
+Testing if assignment to infinity and infinity test are consistent...         [[1;32mPASS[0m]
+Testing if validity test is correct...                                        [[1;32mPASS[0m]
+Testing if reading and writing a point are consistent...                      [[1;32mPASS[0m]
+
+** Arithmetic:
+
+Testing if point addition is commutative...                                   [[1;32mPASS[0m]
+Testing if point addition is associative...                                   [[1;32mPASS[0m]
+Testing if point addition has identity...                                     [[1;32mPASS[0m]
+Testing if point addition has inverse...                                      [[1;32mPASS[0m]
+Testing if point addition in affine coordinates is correct...                 [[1;32mPASS[0m]
+Testing if point addition in projective coordinates is correct...             [[1;32mPASS[0m]
+Testing if point addition in mixed coordinates (z2 = 1) is correct...         [[1;32mPASS[0m]
+Testing if point addition in mixed coordinates (z1,z2 = 1) is correct...      [[1;32mPASS[0m]
+Testing if point subtraction is anti-commutative...                           [[1;32mPASS[0m]
+Testing if point subtraction has identity...                                  [[1;32mPASS[0m]
+Testing if point subtraction has inverse...                                   [[1;32mPASS[0m]
+Testing if point subtraction in affine coordinates is correct...              [[1;32mPASS[0m]
+Testing if point subtraction in projective coordinates is correct...          [[1;32mPASS[0m]
+Testing if point subtraction in mixed coordinates (z2 = 1) is correct...      [[1;32mPASS[0m]
+Testing if point subtraction in mixed coordinates (z1,z2 = 1) is correct...   [[1;32mPASS[0m]
+Testing if point doubling is correct...                                       [[1;32mPASS[0m]
+Testing if point doubling in affine coordinates is correct...                 [[1;32mPASS[0m]
+Testing if point doubling in projective coordinates is correct...             [[1;32mPASS[0m]
+Testing if point doubling in mixed coordinates (z1 = 1) is correct...         [[1;32mPASS[0m]
+Testing if generator has the right order...                                   
+ERROR in bn_rec_naf() at /home/user/contiki/relic-relic-toolkit-0.4.0/src/bn/relic_bn_rec.c,150: insufficient buffer capacity.
+	Call stack:
+		#0 /home/user/contiki/relic-new/bin/test_ep(bn_rec_naf+0xa7) [0x8091827]
+		#1 /home/user/contiki/relic-new/bin/test_ep() [0x806cfd4]
+		#2 /home/user/contiki/relic-new/bin/test_ep() [0x80502c0]
+		#3 /home/user/contiki/relic-new/bin/test_ep(test+0x68) [0x8053888]
+		#4 /home/user/contiki/relic-new/bin/test_ep(main+0x92) [0x804fea2]
+	CAUGHT in ep_mul_glv_imp() at /home/user/contiki/relic-relic-toolkit-0.4.0/src/ep/relic_ep_mul.c,130.
+FATAL ERROR!
+<end of output>
+Test time =   3.19 sec
+----------------------------------------------------------
+Test Failed.
+"test_ep" end time: Aug 25 18:32 CEST
+"test_ep" time elapsed: 00:00:03
+----------------------------------------------------------
+
+9/32 Testing: test_epx
+9/32 Test: test_epx
+Command: "/home/user/contiki/relic-new/bin/test_epx"
+Directory: /home/user/contiki/relic-new/test
+"test_epx" start time: Aug 25 18:32 CEST
+Output:
+----------------------------------------------------------
+
+-- Tests for the EPX module
+
+-- Curve BN-P256:
+
+-- Sextic twist:
+
+** Utilities:
+
+Testing if memory can be allocated...                                         [[1;32mPASS[0m]
+Testing if comparison is consistent...                                        [[1;32mPASS[0m]
+Testing if copy and comparison are consistent...                              [[1;32mPASS[0m]
+Testing if negation and comparison are consistent...                          [[1;32mPASS[0m]
+Testing if assignment to random/infinity and comparison are consistent...     [[1;32mPASS[0m]
+Testing if assignment to infinity and infinity test are consistent...         [[1;32mPASS[0m]
+Testing if validity test is correct...                                        [[1;32mPASS[0m]
+Testing if reading and writing a point are consistent...                      [[1;32mPASS[0m]
+
+** Arithmetic:
+
+Testing if point addition is commutative...                                   [[1;32mPASS[0m]
+Testing if point addition is associative...                                   [[1;32mPASS[0m]
+Testing if point addition has identity...                                     [[1;32mPASS[0m]
+Testing if point addition has inverse...                                      [[1;32mPASS[0m]
+Testing if point addition in affine coordinates is correct...                 [[1;32mPASS[0m]
+Testing if point addition in projective coordinates is correct...             [[1;32mPASS[0m]
+Testing if point addition in mixed coordinates (z2 = 1) is correct...         [[1;32mPASS[0m]
+Testing if point addition in mixed coordinates (z1,z2 = 1) is correct...      [[1;32mPASS[0m]
+Testing if point subtraction is anti-commutative...                           [[1;32mPASS[0m]
+Testing if point subtraction has identity...                                  [[1;32mPASS[0m]
+Testing if point subtraction has inverse...                                   [[1;32mPASS[0m]
+Testing if point subtraction in affine coordinates is correct...              [[1;32mPASS[0m]
+Testing if point subtraction in projective coordinates is correct...          [[1;32mPASS[0m]
+Testing if point subtraction in mixed coordinates (z2 = 1) is correct...      [[1;32mPASS[0m]
+Testing if point subtraction in mixed coordinates (z1,z2 = 1) is correct...   [[1;32mPASS[0m]
+Testing if point doubling is correct...                                       [[1;32mPASS[0m]
+Testing if point doubling in affine coordinates is correct...                 [[1;32mPASS[0m]
+Testing if point doubling in projective coordinates is correct...             [[1;32mPASS[0m]
+Testing if point doubling in mixed coordinates (z1 = 1) is correct...         [[1;32mPASS[0m]
+Testing if generator has the right order...                                   [[1;32mPASS[0m]
+Testing if generator multiplication is correct...                             [[1;32mPASS[0m]
+Testing if multiplication by digit is correct...                              [[1;32mPASS[0m]
+Testing if fixed point multiplication is correct...                           [[1;32mPASS[0m]
+Testing if binary fixed point multiplication is correct...                    [[1;32mPASS[0m]
+Testing if yao windowing fixed point multiplication is correct...             [[1;32mPASS[0m]
+Testing if naf windowing fixed point multiplication is correct...             [[1;32mPASS[0m]
+Testing if single-table comb fixed point multiplication is correct...         [[1;32mPASS[0m]
+Testing if double-table comb fixed point multiplication is correct...         [[1;32mPASS[0m]
+Testing if left-to-right w-naf fixed point multiplication is correct...       [[1;32mPASS[0m]
+Testing if simultaneous point multiplication is correct...                    [[1;32mPASS[0m]
+Testing if basic simultaneous point multiplication is correct...              [[1;32mPASS[0m]
+Testing if shamir's trick for simultaneous multiplication is correct...       [[1;32mPASS[0m]
+Testing if interleaving for simultaneous multiplication is correct...         [[1;32mPASS[0m]
+Testing if jsf for simultaneous multiplication is correct...                  [[1;32mPASS[0m]
+Testing if simultaneous multiplication with generator is correct...           [[1;32mPASS[0m]
+Testing if point compression is correct...                                    [[1;32mPASS[0m]
+Testing if point hashing is correct...                                        [[1;32mPASS[0m]
+Testing if frobenius and scalar multiplication are consistent...              [[1;32mPASS[0m]
+Testing if squared frobenius is consistent...                                 [[1;32mPASS[0m]
+Testing if cubed frobenius is consistent...                                   [[1;32mPASS[0m]
+
+-- All tests have passed.
+
+<end of output>
+Test time =  51.65 sec
+----------------------------------------------------------
+Test Passed.
+"test_epx" end time: Aug 25 18:33 CEST
+"test_epx" time elapsed: 00:00:51
+----------------------------------------------------------
+

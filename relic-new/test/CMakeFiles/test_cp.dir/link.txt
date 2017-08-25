@@ -1,0 +1,1 @@
+/usr/bin/cc  -pipe -std=c99 -m32 -Wall   -O2 -funroll-loops -fomit-frame-pointer  -L/home/user/contiki/relic-relic-toolkit-0.4.0/src/low/easy/  CMakeFiles/test_cp.dir/test_cp.c.o  -o ../bin/test_cp -rdynamic ../lib/librelic_s.a -lrt 

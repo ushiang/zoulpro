@@ -1,0 +1,21 @@
+=static ne varsa sil rom u azaltabilmek icin printfleri azalt
+=eger degisken cok kez kullanilmissa 
+> make udp-client.z1 TARGET=z1 
+  CC        ../../apps/appInclude/appInclude.c
+../../apps/appInclude/appInclude.c:17:9: error: expected identifier or ‘(’ before numeric constant
+../../apps/appInclude/appInclude.c: In function ‘intToByte’:
+../../apps/appInclude/appInclude.c:30:5: warning: function returns address of local variable
+../../apps/appInclude/appInclude.c: In function ‘generateRandChallenge’:
+../../apps/appInclude/appInclude.c:37:12: warning: unused variable ‘random’
+../../apps/appInclude/appInclude.c:34:9: warning: unused variable ‘i’
+../../apps/appInclude/appInclude.c: In function ‘PUFmodel’:
+../../apps/appInclude/appInclude.c:51:13: warning: unused variable ‘challenge’
+../../apps/appInclude/appInclude.c:50:5: warning: unused variable ‘j’
+make: *** [obj_z1/appInclude.o] Error 1
+Process returned error code 2
+
+bu hatayi veriyor.
+=rom u azaltabilmek icin global degisken kullanma
+=random sayi uretmek icin dtls de random.h var random_rand() ile uretilmis. core/lib in icinde random.h
+=illsec/ccm-star-test/ecryption 
+burda powertrace ornegini oyle bir ogrendimki her sekilde power tracei yakalayabiliriz pwertrace_print("hello") komutu ile
